@@ -12,11 +12,11 @@ test('isPhoneNumber Test 2', () => {
 });
 
 test('isPhoneNumber Test 3', () => {
-    expect(functions.isPhoneNumber("123")).toBe(true);
+    expect(functions.isPhoneNumber("123")).toBe(false);
 });
 
 test('isPhoneNumber Test 4', () => {
-    expect(functions.isPhoneNumber("123-456-??90")).toBe(true);
+    expect(functions.isPhoneNumber("123-456-??90")).toBe(false);
 });
 
 test('isEmail Test 1', () => {
@@ -29,11 +29,11 @@ test('isEmail Test 2', () => {
 
 
 test('isEmail Test 3', () => {
-    expect(functions.isEmail("recipe@163.comcn")).toBe(true);
+    expect(functions.isEmail("recipe@163.comcn")).toBe(false);
 });
 
 test('isEmail Test 4', () => {
-    expect(functions.isEmail("cse110163.com")).toBe(true);
+    expect(functions.isEmail("cse110163.com")).toBe(false);
 });
 
 test('isStrongPassword Test 1', () => {
@@ -45,11 +45,11 @@ test('isStrongPassword Test 2', () => {
 });
 
 test('isStrongPassword Test 3', () => {
-    expect(functions.isStrongPassword("123")).toBe(true);
+    expect(functions.isStrongPassword("123")).toBe(false);
 });
 
 test('isStrongPassword Test 4', () => {
-    expect(functions.isStrongPassword("abcdefghijk@@@#%^&")).toBe(true);
+    expect(functions.isStrongPassword("abcdefghijk@@@#%^&")).toBe(false);
 });
 
 test('isDate Test 1', () => {
@@ -61,11 +61,11 @@ test('isDate Test 2', () => {
 });
 
 test('isDate Test 3', () => {
-    expect(functions.isDate("01012001")).toBe(true);
+    expect(functions.isDate("01012001")).toBe(false);
 });
 
 test('isDate Test 4', () => {
-    expect(functions.isDate("01-01-2021")).toBe(true);
+    expect(functions.isDate("01-01-2021")).toBe(false);
 });
 
 test('isHexColor Test 1', () => {
@@ -77,9 +77,9 @@ test('isHexColor Test 2', () => {
 });
 
 test('isHexColor Test 3', () => {
-    expect(functions.isHexColor("fff61e1")).toBe(true);
+    expect(functions.isHexColor("fff61e1")).toBe(false);
 });
 
 test('isHexColor Test 4', () => {
-    expect(functions.isHexColor("#z897mj")).toBe(true);
+    expect(functions.isHexColor("#z897mj")).toBe(false);
 });
