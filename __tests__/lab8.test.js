@@ -108,7 +108,7 @@ describe('Basic user flow for Website', () => {
     // Reload the page, then select all of the <product-item> elements, and check every
     // element to make sure that all of their buttons say "Remove from Cart".
     // Also check to make sure that #cart-count is still 20
-    await page.goto('http://127.0.0.1:5500/index.html');
+    await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
     const prodItems = await page.$$('product-item');
     let allRemoved = true;
     for(let i = 0;i<prodItems.length;i++){
@@ -174,7 +174,7 @@ describe('Basic user flow for Website', () => {
     // Reload the page once more, then go through each <product-item> to make sure that it has remembered nothing
     // is in the cart - do this by checking the text on the buttons so that they should say "Add to Cart".
     // Also check to make sure that #cart-count is still 0
-    await page.goto('http://127.0.0.1:5500/index.html');
+    await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
     const prodItems = await page.$$('product-item');
     let allRemoved = true;
     for(let i = 0;i<prodItems.length;i++){
