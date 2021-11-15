@@ -1,5 +1,7 @@
 # Lab 8 - Starter
-Work alone
+Yifan Lu
+
+Jiayan Dong
 
 1. Run them all after all development is completed. Our recipe project involves many interactions among different individual coponents. We could not check whether individual components interact correctly before we finish developing each component. It would be best for us to test them all after project completion.
 2. No
